@@ -1,0 +1,24 @@
+* {
+  text-align: center;
+}
+
+header {
+  margin: 50px 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+}
+
+nav a:not(:last-child) {
+  margin-right: 20px;
+}
+
+nav {
+  margin-bottom: 50px;
+}
+
+main img {
+  width: 400px;
+}
