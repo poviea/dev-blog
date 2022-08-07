@@ -99,23 +99,6 @@ body {
   transition: all 0.5s;
 }
 
-
-.btn-menu:after {
-  display: block;
-  content: '';
-  border-bottom: 1px solid #080808;
-  transform: scaleX(0);
-  transition: transform 250ms ease-in-out;
-}
-
-.btn-menu:hover:after {
-  transform: scaleX(1);
-}
-
-.btn-menu.fromLeft:after {
-  transform-origin: 0% 50%;
-}
-
 #btn-menu {
   border: none;
   color: #080808;
@@ -124,7 +107,8 @@ body {
   background-color: #efebe7;
   cursor: pointer;
   margin-right: 1rem;
-  top: 0.5rem;
+  top: 1.8rem;
+  line-height: 1rem;
 }
 
 main {
@@ -222,4 +206,88 @@ footer {
 
 .sns a {
   margin-right: 1rem;
+}
+
+
+/* app */
+
+@media (max-width:450px) {
+  @keyframes expand {
+    0% {
+      height: 12rem;
+    }
+  
+    50% {
+      height: 15rem;
+    }
+  
+    100% {
+      height: 12rem;
+    }
+  }
+  
+  @keyframes resolution {
+    0% {
+      width: 20rem;
+      margin-right: -7rem;
+    }
+    100% {
+      width: 14rem;
+      margin-right: -7rem;
+    }
+  }
+  #douzone {
+    font-size: 0.5rem;
+  }
+
+  #btn-res {
+    left: 2rem;
+    top: 1.1rem;
+    height: 1.3rem;
+    font-size: 0.3rem;
+  }
+  
+  #index, #btn-menu  {
+    top: 1.3rem;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+  }
+
+  #index {
+    right: 3rem;
+  }
+
+  main div {
+    margin-right: 9rem;
+  }
+
+  main img {
+    border-radius: 0.5rem;
+    height: 12rem;
+    width: 20rem;
+  }
+
+  footer{
+    font-size: 0.5rem;
+  }
+
+  .btn-footer span{
+    font-size: 0.5rem;
+  }
+
+  #scroll {
+    font-size: 0.5rem;
+  }
+
+  #footer-img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+  }
+
+  .sns a:not(:last-child) {
+    margin-right: 0.4rem;
+  }
+  
 }
