@@ -18,3 +18,12 @@ btn_res.addEventListener('click', () => {
     btn_res.innerHTML = '2.39:1';
   }
 });
+
+const circle = document.querySelector(".circle");
+
+document.addEventListener("mousemove", (e) => { 
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    circle.style.left = mouseX + 25 + 'px';
+    circle.style.top = mouseY + 25 + 'px';
+});
