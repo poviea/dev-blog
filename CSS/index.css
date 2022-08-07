@@ -36,6 +36,19 @@ body {
   font-family: Monument Grotesk, Arial, Helvetica, sans-serif;
 }
 
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  border: 1px solid #dfdbd7;
+  transition: all 0.2s;
+}
+
 #nav {
   display: flex;
   justify-content: space-between;
@@ -62,7 +75,6 @@ body {
   border-radius: 0.2rem;
   padding-bottom: 1rem;
   height: 1rem;
-  cursor: pointer;
 }
 
 #index {
