@@ -213,7 +213,7 @@ footer {
 
 /* app */
 
-@media (max-width:400px) {
+@media (max-width:450px) {
   @keyframes expand {
     0% {
       height: 12rem;
