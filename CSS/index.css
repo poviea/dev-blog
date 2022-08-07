@@ -45,7 +45,7 @@ body {
   border-radius: 50%;
   background-color: transparent;
   transform: translate(-50%, -50%);
-  border: 1px solid #dfdbd7;
+  border: 1px solid #dfaba7;
   transition: all 0.2s;
 }
 
